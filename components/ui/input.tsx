@@ -1,0 +1,3 @@
+import * as React from "react"; import { cn } from "@/lib/utils";
+export function Input(props: React.InputHTMLAttributes<HTMLInputElement>) { return <input {...props} className={cn("w-full rounded-2xl border border-white/10 bg-white/[.06] px-4 py-3 text-white outline-none transition placeholder:text-white/40 focus:border-gold/70 focus:ring-4 focus:ring-gold/10", props.className)} /> }
+export function Textarea(props: React.TextareaHTMLAttributes<HTMLTextAreaElement>) { return <textarea {...props} className={cn("min-h-28 w-full rounded-2xl border border-white/10 bg-white/[.06] px-4 py-3 text-white outline-none transition placeholder:text-white/40 focus:border-gold/70 focus:ring-4 focus:ring-gold/10", props.className)} /> }

@@ -1,0 +1,4 @@
+import type { Metadata } from "next"; import { Cormorant_Garamond, Inter } from "next/font/google"; import "./globals.css";
+const display=Cormorant_Garamond({subsets:["latin"], variable:"--font-display", weight:["500","600","700"]}); const sans=Inter({subsets:["latin"], variable:"--font-sans"});
+export const metadata: Metadata = { title: { default: "Zunami Mry — Premium Creative Agency", template: "%s | Zunami Mry" }, description: "Luxury dance, makeup, and creative academy agency with digital booking system.", openGraph: { title: "Zunami Mry", description: "Premium Creative Agency 2026", type: "website" } };
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="id" className="dark"><body className={`${display.variable} ${sans.variable} font-sans`}>{children}</body></html>}

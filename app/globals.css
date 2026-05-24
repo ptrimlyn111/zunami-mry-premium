@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  --green: #0f3d2e;
+  --dark-green: #06251c;
+  --cream: #f6ead2;
+  --gold: #d4af37;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--green);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.luxury-pattern {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(212, 175, 55, 0.22), transparent 25%),
+    radial-gradient(circle at 80% 10%, rgba(246, 234, 210, 0.12), transparent 28%),
+    linear-gradient(135deg, #06251c 0%, #0f3d2e 50%, #041812 100%);
+}
+
+.cream-pattern {
+  background:
+    radial-gradient(circle at 15% 10%, rgba(212, 175, 55, 0.18), transparent 25%),
+    radial-gradient(circle at 85% 20%, rgba(15, 61, 46, 0.12), transparent 25%),
+    #f6ead2;
+}
+
+.traditional-pattern {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.18;
+  background-image: url("data:image/svg+xml,%3Csvg width='180' height='180' viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23D4AF37' stroke-width='2'%3E%3Cpath d='M90 12C105 42 132 48 165 34C151 67 160 95 172 118C138 113 112 126 90 166C68 126 42 113 8 118C20 95 29 67 15 34C48 48 75 42 90 12Z'/%3E%3Ccircle cx='90' cy='90' r='26'/%3E%3Cpath d='M90 55L102 90L90 125L78 90Z'/%3E%3Cpath d='M55 90L90 78L125 90L90 102Z'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 210px;
+}
