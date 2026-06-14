@@ -68,9 +68,11 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
       <main className="relative z-20 pt-20">{children}</main>
 
       <a
-        href={`https://wa.me/${
-          process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "6281234567890"
-        }`}
+       href={`https://wa.me/${
+  process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "62895611099430"
+}?text=${encodeURIComponent(
+  "Terima kasih telah menghubungi Sanggar ZUNAMI_MRY💃🏻🕺🏻Kami menyediakan jasa tari tradisional dan modren dance , Pesan anda akan di balas sebentar lagi , mohon di tunggu beberapa saat Terimakasih🔥🕺🏻💃🏻"
+)}`}
         target="_blank"
         className="fixed bottom-5 right-5 z-50 rounded-full bg-[#25D366] px-5 py-3 font-semibold text-black shadow-2xl transition hover:scale-105"
       >
